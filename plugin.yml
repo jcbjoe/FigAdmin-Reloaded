@@ -1,0 +1,51 @@
+name: FigAdmin
+main: com.btbb.figadmin.FigAdmin
+version: 1.2
+author: Serge Humphrey Updated by Joe
+description: >
+             Admin plugin for Bukkit, adds important functions like kicking and banning.
+commands:
+  kick:
+    description: Kick a player
+    usage: /<command> player [reason] - Kick a player
+  tempban:
+    description: Temporarily ban a player
+    usage: /<command> player time timeform [reason] - Temporarily ban a player
+  ban:
+    description: Ban a player
+    usage: /<command> player [reason] - Ban a player
+  unban:
+    description: Unban a player
+    usage: /<command> player - Unban a player
+  unbanip:
+    description: Unbans players with IP
+    usage: /<command> IP - Unbans players with given IP
+  checkban:
+    description: Check if a player is banned
+    usage: /<command> [player]
+  reloadfig:
+    description: Reload the entire plugin.
+    usage: /<command>
+  figadmin:
+    description: Displays version.
+    usage: /<command> 
+  ipban:
+    description: Turns IP banning on|off
+    usage: /<command> on|off
+  exportbans:
+    description: Export bans to banned-players.txt
+    usage: /<command>
+  warn:
+    description: Warn a player
+    usage: /<command> player reason - Warn a player
+  clearwarnings:
+    description: Clears all warnings for given player 
+    usage: /<command> player 
+    aliases: clearplayer
+  editban:
+    description: Edit a ban
+    usage: /<command> <list/search/load/id/save/show/reason/time/delete/cancel>
+    aliases: [eb,eban]
+  importkiwi:
+    description: Import table from KiwiAdmin
+    usage: /<command> table [database] - Imports bans from KiwiAdmin table
